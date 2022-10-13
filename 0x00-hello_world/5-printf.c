@@ -1,9 +1,9 @@
 #include<stdio.h>
 /**
- * main - Printing
- *
- * Return Always 0 (Succssfull)
- */
+ * main - Entry point
+ * Description: 'Use the function printf'
+ * Return: Always 0 (Success)
+*/
 int main(void)
 {
 printf("with proper grammar, but the outcome is a piece of art,\n");
