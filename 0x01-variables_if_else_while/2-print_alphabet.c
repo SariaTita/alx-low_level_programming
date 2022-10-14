@@ -1,16 +1,17 @@
 #include <stdio.h>
 /**
 * main - Entry point
-*while loop
+*for loop
 * Return: Always 0 (Success)
 */
 int main(void)
 {
-int c = getchar();
-while (c <= z)
+int c;
+for (c = 'a' , c <= 'z' , c++)
 {
 putchar(c);
-c = getchar();
+putchar('\n');
+getc();
 }
 return (0);
 }
