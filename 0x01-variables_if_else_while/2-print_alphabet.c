@@ -6,12 +6,11 @@
 */
 int main(void)
 {
-char c = a;
-while (c >= z)
+int c = getchar();
+while (c <= z)
 {
 putchar(c);
-c++;
+c = getchar();
 }
-putchar(\n);
 return (0);
 }
