@@ -1,30 +1,14 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
-/**
-* main - Entry point
-*if else
-* Return: Always 0 (Success)
-*/
-int main(void)
-{
-int n;
-srand(time(0));
-n = rand() - RAND_MAX / 2;
-if (n > 0)
-{
-printf("%d is positive\n", n);
-}
-else
-{
-if (n == 0)
-{
-printf("%d is zero\n", n);
-}
-else
-{
-printf("%d is negative\n", n);
-}
-}
-return (0);
-}
+void positive_or_negative(int i);
+int _putchar(char);
+void print_alphabet(void);
+void jack_bauer(void);
+void print_alphabet_x10(void);
+void times_table();
+void print_to_98(int);
+void print_times_table(int);
+int _islower(int c);
+int _isalpha(int c);
+int print_sign(int n);
+int _abs(int);
+int add(int n, int m);
+int print_last_digit(int n);
