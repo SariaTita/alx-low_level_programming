@@ -15,7 +15,7 @@ largest = a;
 }
 else
 {
-if (b > a && b > c)
+if (b > c)
 {
 largest = b;
 }
