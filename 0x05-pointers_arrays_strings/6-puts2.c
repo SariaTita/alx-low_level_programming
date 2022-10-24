@@ -15,4 +15,5 @@ _putchar(*(str + i));
 i = i + 2;
 }
 _putchar('\n');
+return (void);
 }
