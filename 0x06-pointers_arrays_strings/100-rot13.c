@@ -28,7 +28,7 @@ char rot13key[52] = {'N', 'O', 'P', 'Q', 'R', 'S',
 while (str[++index1])
 {
 for (index2 = 0; index2 < 52; index2++)
-{	
+{
 if (str[index1] == alphabet[index2])
 {
 str[index1] = rot13key[index2];
