@@ -26,5 +26,5 @@ str[index - 1] == '{' ||
 str[index - 1] == '}')
 str[index] -= 32;
 }
-return (0);
+return (str);
 }
