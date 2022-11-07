@@ -41,11 +41,11 @@ free(split);
 return (NULL);
 }
 }
+}
 split[words] = NULL;
 return (split);
 }
 else
-{
 return (NULL);
 }
 /**
@@ -91,3 +91,4 @@ len++;
 }
 return (len);
 }
+
