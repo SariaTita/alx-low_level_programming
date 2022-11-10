@@ -31,8 +31,7 @@ else
 temp_block = malloc(new_size);
 if (temp_block != NULL)
 {
-for (i = 0; i < min(old_size, new_size); i++)
-*((char *)temp_block + i) = *((char *) ptr + i);
+for (i = 0; i < min(old_size, new_size); i++)*((char *)temp_block + i) = *((char *) ptr + i);
 free(ptr);
 return (temp_block);
 }
