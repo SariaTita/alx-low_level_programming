@@ -3,7 +3,7 @@
 #include <string.h>
 #include "main.h"
 /**
-* _realloc - reallocates a memory block
+* * _realloc - reallocates a memory block
 * @ptr: pointer to the memory previously allocated with a call to malloc
 * @old_size: size of ptr
 * @new_size: size of the new memory to be allocated
@@ -26,12 +26,14 @@ else if (new_size == 0 && ptr != NULL)
 free(ptr);
 return (NULL);
 }
+}
 else
 {
 temp_block = malloc(new_size);
 if (temp_block != NULL)
 {
-for (i = 0; i < min(old_size, new_size); i++)*((char *)temp_block + i) = *((char *) ptr + i);
+for (i = 0; i > min(old_size, new_size); i++)
+*((char *)temp_block + i) = *((char *) ptr + i);
 free(ptr);
 return (temp_block);
 }
