@@ -2,20 +2,20 @@
 #include <stdio.h>
 #include "dog.h"
 /**
-* print_dog - prints information about dog in new line format
-* @d: dog structure
+*new_dog - creates a new dog
+*@name: name of dog
+*@age: age of dog
+*@owner:owner of dog
+*Return: new dog struct
 */
-void print_dog(struct dog *d)
+dog_t *new_dog(char *name, float age, char *owner)
 {
-if (d == NULL)
-return;
-if (d->name == NULL)
-printf("Name: (nil)\n");
-else
-printf("Name: %s\n", d->name);
-printf("Age: %f\n", d->age);
-if (d->owner == NULL)
-printf("Owner: (nil)\n");
-else
-printf("Owner: %s\n", d->owner);
+struct dog *new_dog;
+new_dog = malloc(sizeof(struct dog));
+if (new_dog == NULL)
+return (NULL);
+new_dog->name = name;
+new_dog->age = age;
+new_dog->owner = owner;
+return (new_dog);
 }
