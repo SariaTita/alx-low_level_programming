@@ -48,13 +48,14 @@ return (NULL);
 doggo->name = malloc(sizeof(char) * (_strlen(name) + 1));
 if (doggo->name == NULL)
 {
-free(doggo);
+free(doggo->name);
 return (NULL);
 }
 doggo->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 if (doggo->owner == NULL)
 {
 free(doggo->name);
+free(doggo->owner);
 free(doggo);
 return (NULL);
 }
