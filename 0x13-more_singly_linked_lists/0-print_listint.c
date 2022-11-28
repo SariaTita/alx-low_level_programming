@@ -16,4 +16,5 @@ count += 1;
 cursor = cursor->next;
 }
 return (count);
+free(count);
 }
